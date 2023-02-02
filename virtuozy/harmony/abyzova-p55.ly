@@ -27,10 +27,12 @@
 
 \markup \large "102. Гармонизовать следующие мелодии и басы:"
 
+\markup {}
+\markup {}
 
 % Задание № 1
 
-\parallelMusic voiceS,voiceA,voiceT,voiceB {
+\parallelMusic voiceS, voiceA, voiceT, voiceB {
   bes2 d-3^"ш" | f1 | d2 bes | bes1 |
   g,2.-3^"т" f4 | es2. d4 | bes1 | es2. bes4 |
   f2^"т" c'4^"ш" d | c2 f4 f | a2 a4 bes | f'2. bes,4 |
@@ -46,14 +48,17 @@
 }
 
 analysis = \lyricmode {
- Ⅰ − Ⅳ Ⅰ Ⅴ − Ⅰ Ⅴ Ⅰ Ⅴ Ⅰ Ⅳ − Ⅴ − Ⅰ Ⅳ − Ⅰ − Ⅴ − Ⅰ % Ⅰ Ⅳ Ⅴ −
+ \override LyricText.self-alignment-X = #1
+ \markup { B♭: \hspace #2 Ⅰ}
+ \override LyricText.self-alignment-X = #0
+ − Ⅳ Ⅰ Ⅴ − Ⅰ Ⅴ Ⅰ Ⅴ Ⅰ Ⅳ − Ⅴ − Ⅰ Ⅳ − Ⅰ − Ⅴ − Ⅰ % Ⅰ Ⅳ Ⅴ −
 }
 
 \score {
   \new GrandStaff <<
     \new Staff <<
       \new Voice = "soprano" { \voiceOne
-        \sectionLabel "1. B-dur" \key bes \major \time 4/4 \relative c'' \voiceS \bar "|."
+        \sectionLabel "1." \key bes \major \time 4/4 \relative c'' \voiceS \bar "|."
       }
       \new Voice { \voiceTwo
         \relative c' \voiceA
@@ -75,10 +80,12 @@ analysis = \lyricmode {
   \midi { }
 }
 
+\markup {}
+
 
 % Задание № 2
 
-\parallelMusic voiceS,voiceA,voiceT,voiceB {
+\parallelMusic voiceS, voiceA, voiceT, voiceB {
   a4.-3 d8-3 cis4 | fis4. fis8 eis4 | cis4. b8 gis4 | fis,4. b8 cis4 |
   cis2 fis4 | fis2 a4 | a2 cis4 | fis2 fis,4 |
   d4^"ш" fis,^"т" b | fis4 d fis | b2 d4 | b2. |
@@ -91,14 +98,17 @@ analysis = \lyricmode {
 }
 
 analysis = \lyricmode {
-  ⅰ ⅳ Ⅴ ⅰ − ⅳ − − Ⅴ ⅰ − ⅳ Ⅴ − ⅰ ⅳ − Ⅴ − ⅰ % ⅰ ⅳ Ⅴ −
+  \override LyricText.self-alignment-X = #1
+  \markup { f♯: \hspace #2 ⅰ}
+  \override LyricText.self-alignment-X = #0
+  ⅳ Ⅴ ⅰ − ⅳ − − Ⅴ ⅰ − ⅳ Ⅴ − ⅰ ⅳ − Ⅴ − ⅰ % ⅰ ⅳ Ⅴ −
 }
 
 \score {
   \new GrandStaff <<
     \new Staff <<
       \new Voice = "soprano" { \voiceOne
-        \sectionLabel "2. fis-moll" \key fis \minor \time 3/4 \relative c'' \voiceS \bar "|."
+        \sectionLabel "2." \key fis \minor \time 3/4 \relative c'' \voiceS \bar "|."
       }
       \new Voice { \voiceTwo
         \relative c' \voiceA
@@ -120,10 +130,12 @@ analysis = \lyricmode {
   \midi { }
 }
 
+\markup {}
+
 
 % Задание № 3
 
-\parallelMusic voiceS,voiceA,voiceT,voiceB {
+\parallelMusic voiceS, voiceA, voiceT, voiceB {
   c2-3^"ш" f,-3^"т" as | es2 des es | as2 as c | as2 des as |
   g2. bes4 c2 | es1. | bes2. g4 as2 | es'1 as,2 |
   as2 des bes | des2 f es | f2 as g | des1 es2 |
@@ -136,14 +148,17 @@ analysis = \lyricmode {
 }
 
 analysis = \lyricmode {
-  Ⅰ Ⅳ − Ⅴ − Ⅰ Ⅳ − Ⅴ Ⅰ Ⅴ Ⅴ − Ⅰ Ⅴ − Ⅰ Ⅳ − − Ⅴ − Ⅰ % Ⅰ Ⅳ Ⅴ −
+  \override LyricText.self-alignment-X = #1
+  \markup { A♭: \hspace #2 Ⅰ}
+  \override LyricText.self-alignment-X = #0
+  Ⅳ − Ⅴ − Ⅰ Ⅳ − Ⅴ Ⅰ Ⅴ Ⅴ − Ⅰ Ⅴ − Ⅰ Ⅳ − − Ⅴ − Ⅰ % Ⅰ Ⅳ Ⅴ −
 }
 
 \score {
   \new GrandStaff <<
     \new Staff <<
       \new Voice = "soprano" { \voiceOne
-        \sectionLabel "3. As-dur" \key as \major \time 3/2 \relative c'' \voiceS \bar "|."
+        \sectionLabel "3." \key as \major \time 3/2 \relative c'' \voiceS \bar "|."
       }
       \new Voice { \voiceTwo
         \relative c' \voiceA
@@ -165,10 +180,12 @@ analysis = \lyricmode {
   \midi { }
 }
 
+\markup {}
+
 
 % Задание № 4
 
-\parallelMusic voiceS,voiceA,voiceT,voiceB {
+\parallelMusic voiceS, voiceA, voiceT, voiceB {
   fis4 e | d4 cis | a4 a | d,4 a' |
   fis8-3 b-3 a4 | d2 | a8 g fis4 | d8 g, d'4|
   a8 cis d d | cis8 e fis g | e8 a a b | a4 d,8 g |
@@ -180,14 +197,17 @@ analysis = \lyricmode {
 }
 
 analysis = \lyricmode {
-  Ⅰ Ⅴ Ⅰ Ⅳ Ⅰ Ⅴ − Ⅰ Ⅳ Ⅴ − Ⅰ Ⅴ Ⅰ − Ⅳ − − Ⅰ − Ⅳ − Ⅰ − % Ⅰ Ⅳ Ⅴ −
+  \override LyricText.self-alignment-X = #1
+  \markup { D: \hspace #2 Ⅰ}
+  \override LyricText.self-alignment-X = #0
+  Ⅴ Ⅰ Ⅳ Ⅰ Ⅴ − Ⅰ Ⅳ Ⅴ − Ⅰ Ⅴ Ⅰ − Ⅳ − − Ⅰ − Ⅳ − Ⅰ − % Ⅰ Ⅳ Ⅴ −
 }
 
 \score {
   \new GrandStaff <<
     \new Staff <<
       \new Voice = "soprano" { \voiceOne
-        \sectionLabel "4. D-dur" \key d \major \time 2/4 \relative c' \voiceS \bar "|."
+        \sectionLabel "4." \key d \major \time 2/4 \relative c' \voiceS \bar "|."
       }
       \new Voice { \voiceTwo
         \relative c' \voiceA
@@ -207,4 +227,64 @@ analysis = \lyricmode {
   >>
   \layout { }
   \midi { }
+}
+
+\markup {}
+
+
+% Задание № 5
+
+\parallelMusic voiceS, voiceA, voiceT, voiceB {
+  a4 f'8 cis d4 | s2. | s2. | s2. |
+  d4 g8 bes, a4 | s2. | s2. | s2. |
+  a8 d f,4 bes8 d | s2. | s2. | s2. |
+  cis4 e4. a,8 | s2. | s2. | s2. |
+  a4 f'8 cis d4 | s2. | s2. | s2. |
+  d4 bes'4. a8 | s2. | s2. | s2. |
+  g4 d8 g f4 | s2. | s2. | s2. |
+  e4 d2 | s2. | s2. | s2. |
+}
+
+analysis = \lyricmode {
+  \override LyricText.self-alignment-X = #1
+  \markup { d: \hspace #2 ⅰ}
+  \override LyricText.self-alignment-X = #0
+  % ⅰ ⅳ Ⅴ −
+}
+
+\score {
+  \new GrandStaff <<
+    \new Staff <<
+      \new Voice = "soprano" { \voiceOne
+        \sectionLabel "5." \key d \minor \time 3/4 \relative c'' \voiceS \bar "|."
+      }
+      \new Voice { \voiceTwo
+        \relative c' \voiceA
+      }
+    >>
+    \new Staff << \clef bass
+      \new Voice { \voiceThree
+        \relative c' \voiceT
+      }
+      \new Voice { \voiceFour
+        \key d \minor \relative c \voiceB
+      }
+    >>
+    \new Lyrics \lyricsto "soprano" {
+      \analysis
+    }
+  >>
+  \layout { }
+  \midi { }
+}
+
+\score {
+  \new GrandStaff {
+    \key d \minor
+    \relative { <d' f a>1 <g bes d> <a cis e g> s1 s1 s1 s1 }
+  }
+  \layout {
+    \omit Staff.TimeSignature
+    \override Score.BarLine.stencil = ##f
+  }
 }

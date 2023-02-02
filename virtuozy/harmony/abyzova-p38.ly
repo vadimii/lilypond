@@ -77,7 +77,7 @@ analysis = \lyricmode {
   a2. | d2. | fis2. | d2. |
   b2 a8\startGroup fis8\stopGroup | d2 d4 | g2 fis8 a8 | g,2 d'4 |
   g2 e4 | d2 c4 | b2 g4 | g,2 c4 |
-  d4^"т"\startGroup a'^"ш" fis\stopGroup | a4 d2 | fis4 fis a | d2. |
+  d4^"т"\startGroup a'^"ш" fis\stopGroup | a4 d4 d | fis4 fis a | d2. |
   g2. | d2. | b2. | g,2. |
 }
 
